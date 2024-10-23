@@ -5,7 +5,7 @@ screen = pygame.display.set_mode(size)
 pygame.display.set_caption("Моя программа")
 direct_x1 = 1
 direct_y1 = 1
-direct_x = 2
+direct_x = 1
 direct_y = 1
 font = pygame.font.SysFont('comicsansms', 80)
 RED = (255, 0, 0)
