@@ -417,7 +417,7 @@ def difficulty_selection_screen():
 def parrot_selection_screen():
     clock = pygame.time.Clock()
     selected = 0
-    parrots = ["Какаду", "Ара", "Серая африканская попугай"]
+    parrots = ["Какаду", "Ара", "Серый африканский попугай"]
 
     while True:
         clock.tick(60)  # 60 FPS
