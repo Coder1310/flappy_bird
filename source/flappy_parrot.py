@@ -540,7 +540,7 @@ def main():
         if check_collision(BIRD_Y, pipes):
 # Обновление рекорда, если необходимо
             if score > high_score:
-                high_score = score
+                high_score = score  
                 save_high_score(high_score)
             game_over_screen(score, high_score)
             run = False  # Завершение текущего цикла игры
