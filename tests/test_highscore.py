@@ -28,3 +28,16 @@ class TestFlappyParrot(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+import pytest
+from flappy_parrot import load_high_score, save_high_score
+
+def test_load_high_score_new_file():
+    # Тестируем создание нового файла с рекордами
+    score = load_high_score()
+    assert score == 0  # Ожидаем 0, так как файл только что создан
+
+def test_save_high_score():
+    # Проверяем правильность сохранения нового рекорда
+    save_high_score(123)
+    score = load_high_score()
+    assert score == 123  # Проверяем, что рекорд сохранился
